@@ -79,12 +79,7 @@ editButtons.forEach((btn) => {
 	})
 })
 
-function editModal(gameId) {
-	// console.log(gameId, gamesList)
-	// Trouvez le jeu en fonction de son identifiant
-	const result = gamesList.findIndex((game) => game.id === parseInt(gameId))
-	modifyModal("Mode Edition")
-}
+
 
 function modifyModal(modalTitle) {
 	// Écrir le nom du jeu dans le titre du modal
@@ -110,7 +105,13 @@ function editModal(gameId) {
 	// console.log(gameId, gamesList)
 	// Trouvez le jeu en fonction de son identifiant
 	const result = gamesList.findIndex((game) => game.id === parseInt(gameId))
-	modifyModal("Mode Edition")
+	fetch("./form.html").then((data) => {
+		data.text().then((form) => {
+			modifyModal("Mode Edition", form)
+		})
+	})
+	// passer une image comme corps du modal
+	// const modalBody = `<h4>ajoutez un formulaire pour modifier le jeu ici</h4>`
 }
 
 function modifyModal(modalTitle, modalBody) {
@@ -127,12 +128,5 @@ function viewModal(gameId) {
 	modifyModal(gamesList[result].title, modalBody)
 }
 
-function editModal(gameId) {
-	// console.log(gameId, gamesList)
-	// Trouvez le jeu en fonction de son identifiant
-	const result = gamesList.findIndex((game) => game.id === parseInt(gameId))
-	// passer une image comme corps du modal
-	const modalBody = `<h4>ajoutez un formulaire pour modifier le jeu ici</h4>`
-	modifyModal("Mode Edition", modalBody)
-}
+
 
