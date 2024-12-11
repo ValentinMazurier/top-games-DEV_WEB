@@ -102,16 +102,33 @@ function viewModal(gameId) {
 }
 
 function editModal(gameId) {
-	// console.log(gameId, gamesList)
 	// Trouvez le jeu en fonction de son identifiant
 	const result = gamesList.findIndex((game) => game.id === parseInt(gameId))
+	// Injectez le formulaire dans le corps du modal
 	fetch("./form.html").then((data) => {
 		data.text().then((form) => {
+			// Modifiez le titre et le corps du modal
+			const selectedGame = gamesList[result]
 			modifyModal("Mode Edition", form)
+			modifyFom({
+				title: selectedGame.title,
+				year: selectedGame.year,
+				imageUrl: selectedGame.imageUrl,
+			})
 		})
 	})
-	// passer une image comme corps du modal
-	// const modalBody = `<h4>ajoutez un formulaire pour modifier le jeu ici</h4>`
+}
+
+function modifyFom(gameData) {
+	const form = document.querySelector("form")
+	console.log(gameData)
+}
+
+function modifyFom(gameData) {
+	const form = document.querySelector("form")
+	form.title.value = gameData.title
+	form.year.value = gameData.year
+	form.imageUrl.value = gameData.imageUrl
 }
 
 function modifyModal(modalTitle, modalBody) {
