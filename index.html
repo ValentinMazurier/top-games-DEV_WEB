@@ -1,3 +1,28 @@
+
+
+<header
+class="d-flex flex-wrap justify-content-center py-3 text-bg-dark gap-4"
+>
+<a
+    href="/"
+    class="d-flex align-items-center text-white text-decoration-none p-3"
+>
+    <span class="fs-4 text-center">Games</span>
+</a>
+<a
+    class="d-flex align-items-center text-white text-decoration-none text-bg-secondary p-3"
+    href="./login.html"
+>
+    <span class="fs-4 text-center">LogIn</span></a
+>
+</header>
+
+<section>
+    <h1 class="text-center mt-2"><b>TOP GAMES</b></h1>
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,97 +30,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap Demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
-        .card-img-top {
-            object-fit: cover;
-            max-height: 125px;
-        }
-    </style>
 </head>
-<body>
-    <!-- En-tête -->
-    <header class="d-flex flex-wrap justify-content-center py-3 text-bg-dark">
-        <a href="/" class="d-flex align-items-center text-white text-decoration-none">
-            <span class="fs-4 text-center">Games</span>
-        </a>
-    </header>
 
-    <!-- Titre de la section -->
-    <section>
-        <h1 class="text-center mt-2">Top Games</h1>
-    </section>
-
-    <!-- Galerie de cartes -->
-    <div class="album py-5 bg-light">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <!-- Carte 1 -->
-                <!--<article class="col">
-                    <div class="card shadow-sm">
-                        <img src="C:\Users\Mazurier\Documents\ENSEA_web\Exercice Bootstrap\darktide_key_art.jpg" class="card-img-top" alt="Warhammer 40,000 : darktide">
-                        <div class="card-body">
-                            <p class="card-text">Reprenez la ville de Tertium aux hordes d'ennemis assoiffés de sang dans ce jeu de tir intense et brutal. Warhammer 40,000: Darktide est la nouvelle expérience de coopération par l'équipe primée à l'origine de la série Vermintide.
-
-                                Au cœur de la ruche, la corruption naissante menace de devenir une vague écrasante de ténèbres. Une nouvelle force mystérieuse et maléfique cherche à prendre le contrôle de la ville entière. Il vous revient, à vous et vos alliés de l'Inquisition, d'éradiquer l'ennemi avant que la ville ne sombre dans le chaos.
-                                
-                                Avec la chute de Tertium, les parias s'élèveront.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>-->
-                <!-- Carte 2 -->
-                <!--<article class="col">
-                    <div class="card shadow-sm">
-                        <img src="C:\Users\Mazurier\Documents\ENSEA_web\Exercice Bootstrap\DSDC.jpg" class="card-img-top" alt="Death stranding : director's cut">
-                        <div class="card-body">
-                            <p class="card-text">Dans le futur, un événement mystérieux connu sous le nom de Death Stranding a ouvert une porte entre les morts et les vivants, conduisant à la propagation de créatures grotesques de l'au-delà dans un monde déchu marqué par une société dévastée.
-
-                                Sam Bridges a pour mission de donner de l'espoir à l'humanité en reconnectant tous les survivants d'une Amérique décimée.
-                                Parviendrez-vous à réunifier ce monde déchiré ?</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>-->
-                <!-- Ajoutez d'autres cartes si nécessaire -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Bootstrap -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Titre du modal</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Détails du jeu
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Scripts Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-			crossorigin="anonymous"
-		></script>
-		<script src="./script.js"></script>
-</body>
+ 
 </html>
+
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <!-- Ajoutez des cartes ici -->
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Résumé du Jeu </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src = "./checkLogin.js"></script>
+        <script src="./script.js"></script>
+
+    </body>
+</div>
+
